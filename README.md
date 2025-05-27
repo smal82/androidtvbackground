@@ -5,12 +5,8 @@ I developed this to use it with alternative Android TV launchers
 
 ![y](https://github.com/adelatour11/androidtvbackground/assets/1473994/8039b728-469f-4fd9-8ca5-920e57bd16d9)
 
-
 To use the script, you have to specify : 
-- For Plex.py script : your plex token and plex server url
-- For TMDB.py or TMDBlogo.py : your TMDB API Read Access Token
-- For Trakt.py, your Trakt client key, Trakt username, Trakt list name and TMDB API Read Access Token
-- For Jellyfin.py, your server url, token and user id
+- For TMDB.py : your TMDB API Read Access Token
 
 The scripts retrieves the background of the latests shows (movies or tv shows), resizes the image, add an overlay and add text or image on top
 
@@ -37,24 +33,8 @@ If you are looking for the docker version check out this branch https://github.c
 - install latest version of python (https://www.python.org/downloads/)
 - Install pip (follow the process here https://pip.pypa.io/en/stable/installation/)
 - Download the content of this repository
-- Go into the repository using a terminal and install dependencies :
-  ```
-  pip install -r requirements.txt
-  ```
-- Edit each python scripts with your info
-    - Specify you credentials
-        - for Plex check this article on how to find your plex token https://support.plex.tv/articles/204059436-finding-an-authentication-token-x-plex-token/
-        - for TMDB create an account and get you api key here there https://www.themoviedb.org/settings/api
-        - for Trakt create your account and go there https://trakt.tv/oauth/applications to create an app and retrieve your client id 
-- As you run one of the script it will create a new folder and add the images automatically.
-- Each time the scripts will run it will delete the content of the folder and create new images
-- if you want to edit the overlay and background image I have included the source file as a vector format 
-
 
 **If you want to edit the scripts :**
-
-***Plex Script***
-- For the plex script you can specify the number of poster to generate, specify if you want to include movies and tv, specify if you want latest added or latest aired items. You can also edit the code to change the text position or content
 
 ***TMDB Scripts***
 - Shows that do not have the logo on TMDB will just have the title displayed
